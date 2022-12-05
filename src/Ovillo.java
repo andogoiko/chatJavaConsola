@@ -38,7 +38,7 @@ public class Ovillo implements Runnable{
                             if(socket.isConnected()){
                                 BufferedWriter bufferedWriterSock = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
 
-                                bufferedWriterSock.write("Lo que me cuenta el cliente Nª" + numCli + ": " + finalQueDice + "\n");
+                                bufferedWriterSock.write("Lo que me cuenta el cliente Nª" + numCli + ": " + finalQueDice + "");
                                 bufferedWriterSock.newLine();
                                 bufferedWriterSock.flush();
                             }
